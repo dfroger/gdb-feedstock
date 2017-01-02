@@ -13,6 +13,7 @@ docker info
 config=$(cat <<CONDARC
 
 channels:
+ - dfroger  # As we need pydebug
  - conda-forge
  - defaults # As we need conda-build
 

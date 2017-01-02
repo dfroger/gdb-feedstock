@@ -13,7 +13,11 @@ source:
 
 build:
   number: 0
-  skip: True  # [win or osx]
+  features:
+    - pydebug
+  track_features:
+    - pydebug
+  skip: True # [not linux or not py27]
 
 requirements:
   build:
